@@ -24,10 +24,11 @@
     .growth-chart,.heatmap,.supply-map{padding:clamp(22px,4vw,42px);background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);box-shadow:0 14px 38px rgba(16,35,63,.055)}figure figcaption h2,figure figcaption h3,.heatmap h3{margin:5px 0 6px;font-family:var(--serif);font-size:clamp(1.5rem,2.6vw,2.35rem);font-weight:700;letter-spacing:-.01em}figure figcaption p,.heatmap-head p{margin:0;color:var(--muted);font-size:.86rem}.bar-list{display:grid;gap:15px;margin-top:30px}.bar-meta{display:flex;justify-content:space-between;gap:20px;font-size:.84rem}.bar-meta strong{color:var(--accent)}.bar-track{height:8px;background:var(--soft);border-radius:99px;overflow:hidden}.bar-track span{display:block;width:100%;height:100%;background:var(--accent);border-radius:inherit;transform:scaleX(var(--bar));transform-origin:left center;transition:transform .8s var(--ease) var(--delay)}
     .heatmap-scroll{overflow:auto;margin-top:28px}.heatmap-grid{display:grid;grid-template-columns:minmax(150px,1.5fr) repeat(calc(var(--cols) - 1),minmax(72px,1fr));gap:5px;min-width:650px}.heat-label,.heat-cell{min-height:46px;display:flex;align-items:center;justify-content:center;border-radius:6px;font-size:.76rem}.heat-label{justify-content:flex-start;padding:0 10px;background:var(--soft);font-weight:700}.heat-header{background:var(--ink);color:#fff;justify-content:center}.heat-cell{border:1px solid rgba(var(--accent-rgb),.08)}.heat-cell span{font-weight:800}.heat-1{background:rgba(var(--accent-rgb),.08)}.heat-2{background:rgba(var(--accent-rgb),.16)}.heat-3{background:rgba(var(--accent-rgb),.28)}.heat-4{background:rgba(var(--accent-rgb),.48);color:#123c5d}.heat-5{background:var(--accent);color:#fff}
     .supply-stages{display:grid;grid-template-columns:1fr 36px 1fr 36px 1fr;align-items:stretch;margin-top:30px}.supply-stage{padding:25px;border-top:3px solid var(--accent);background:var(--soft)}.supply-stage span{font-size:.72rem;color:var(--accent);font-weight:800}.supply-stage strong{display:block;margin:10px 0 6px;font-size:1.08rem}.supply-stage p{margin:0;color:var(--muted);font-size:.8rem;line-height:1.6}.supply-arrow{display:grid;place-items:center;color:var(--accent);font-size:1.4rem}
+    .company-jump{display:grid;grid-template-columns:1.15fr repeat(3,1fr);align-items:stretch;margin:0 0 64px;border-block:1px solid var(--line)}.company-jump>span{display:flex;align-items:center;padding:18px 16px 18px 0;color:var(--muted);font-size:.76rem;letter-spacing:.08em}.company-jump a{display:flex;align-items:center;gap:12px;padding:18px;text-decoration:none;border-left:1px solid var(--line);font-weight:800;font-size:.86rem;transition:background .18s,color .18s}.company-jump a:hover{background:var(--soft);color:var(--accent)}.company-jump b{color:var(--accent);font-size:.72rem}.company-overview{padding:clamp(24px,4vw,42px);background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);box-shadow:0 14px 38px rgba(16,35,63,.045)}.company-overview-head{max-width:740px;margin-bottom:36px}.company-overview-head h2,.company-group-head h2{margin:5px 0 8px;font-family:var(--serif);font-weight:700;font-size:clamp(1.8rem,3.3vw,3.15rem);line-height:1.14;letter-spacing:-.02em}.company-overview-head p,.company-group-head p{margin:0;color:var(--muted)}.company-table-block>h3{margin:52px 0 18px;font-size:1.22rem}.company-table-block .table-shell{margin-top:0;margin-bottom:34px}.company-source-note{display:flex;gap:12px;align-items:center;margin:32px 0 0!important;padding-top:20px;border-top:1px solid var(--line);color:var(--muted)!important;font-size:.78rem}.company-source-note span{padding:4px 8px;border-radius:4px;background:var(--soft);color:var(--accent);font-weight:800}.company-group{scroll-margin-top:28px;margin-top:clamp(96px,12vw,150px)}.company-group-head{display:grid;grid-template-columns:74px minmax(0,1fr);gap:24px;padding:32px 0 34px;border-top:4px solid var(--accent);border-bottom:1px solid var(--line)}.company-group-no{padding-top:8px;color:var(--accent);font-weight:800;letter-spacing:.14em}.company-group .company-table-block>h3{margin-top:58px}.company-group .table-shell{background:var(--surface)}
     .back-top{position:fixed;z-index:700;right:22px;bottom:22px;width:46px;height:46px;border:1px solid var(--line);border-radius:50%;background:rgba(255,255,255,.92);color:var(--ink);box-shadow:var(--shadow);opacity:0;pointer-events:none;transform:translateY(10px);transition:opacity .2s,transform .2s}.back-top.visible{opacity:1;pointer-events:auto;transform:none}.back-top:active{transform:scale(.96)}
     .reveal{opacity:0;transform:translateY(18px);transition:opacity .55s var(--ease),transform .55s var(--ease)}.reveal.visible{opacity:1;transform:none}.footer{max-width:1040px;margin:100px auto 0;padding:40px 0;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:30px;color:var(--muted);font-size:.78rem}.footer strong{color:var(--ink)}
     @media(max-width:1100px){.hero{grid-template-columns:1fr;align-items:center;min-height:auto;padding-top:120px}.hero-aside{max-width:720px}.layout{grid-template-columns:1fr}.side-nav{display:none}.mobile-bar{display:block}.mobile-menu{display:none;max-height:65dvh;overflow:auto;padding:8px 0 16px}.mobile-menu.open{display:grid}.mobile-menu a{padding:8px 0;text-decoration:none;color:var(--muted);font-size:.82rem}main{padding-inline:clamp(20px,5vw,54px)}}
-    @media(max-width:720px){body{font-size:15px}.hero{padding:92px 20px 64px;gap:54px}.hero h1{font-size:clamp(2.55rem,14vw,4.2rem)}.hero-meta{display:grid;gap:6px}.chapter-header{grid-template-columns:1fr;gap:8px}.chapter-header h1{font-size:2.3rem}.report-section{padding-top:78px}.report-section+section{margin-top:10px}.report-section>h2{margin-top:58px}.table-hint{display:flex}.metric-board figcaption{grid-template-columns:1fr}.metric-grid{grid-template-columns:1fr 1fr}.metric{border-bottom:1px solid rgba(255,255,255,.13)}.metric:nth-child(2){border-right:0}.metric:nth-child(3){padding-left:0}.supply-stages{grid-template-columns:1fr}.supply-arrow{height:34px;transform:rotate(90deg)}.footer{display:block}.footer span{display:block;margin-top:8px}}
+    @media(max-width:720px){body{font-size:15px}.hero{padding:92px 20px 64px;gap:54px}.hero h1{font-size:clamp(2.55rem,14vw,4.2rem)}.hero-meta{display:grid;gap:6px}.chapter-header{grid-template-columns:1fr;gap:8px}.chapter-header h1{font-size:2.3rem}.report-section{padding-top:78px}.report-section+section{margin-top:10px}.report-section>h2{margin-top:58px}.table-hint{display:flex}.metric-board figcaption{grid-template-columns:1fr}.metric-grid{grid-template-columns:1fr 1fr}.metric{border-bottom:1px solid rgba(255,255,255,.13)}.metric:nth-child(2){border-right:0}.metric:nth-child(3){padding-left:0}.supply-stages{grid-template-columns:1fr}.supply-arrow{height:34px;transform:rotate(90deg)}.company-jump{grid-template-columns:1fr;margin-bottom:48px}.company-jump>span{padding:13px 0}.company-jump a{border-left:0;border-top:1px solid var(--line);padding:14px 4px}.company-overview{padding:22px 16px}.company-group{margin-top:88px}.company-group-head{grid-template-columns:1fr;gap:4px;padding-top:24px}.company-group-no{padding-top:0}.company-source-note{display:block}.company-source-note span{display:table;margin-bottom:8px}.footer{display:block}.footer span{display:block;margin-top:8px}}
     @media(max-width:390px){main{padding-inline:16px}.hero{padding-inline:16px}.metric-grid{grid-template-columns:1fr}.metric,.metric:not(:first-child),.metric:last-child{padding:20px 0;border-right:0}.growth-chart,.heatmap,.supply-map,.metric-board{margin-inline:-4px;padding:20px 16px}.chapter-header h1{font-size:2rem}}
     @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation-duration:.01ms!important;transition-duration:.01ms!important;transition-delay:0ms!important}.reveal{opacity:1;transform:none}}
     @media print{.progress,.side-nav,.mobile-bar,.back-top{display:none!important}.layout{display:block}.hero{min-height:auto;break-after:page}.reveal{opacity:1;transform:none}.report-section{break-before:page}main{padding:0 12mm}.table-shell{overflow:visible;box-shadow:none}table{font-size:8pt}}
@@ -2147,801 +2148,109 @@
 </tbody></table></div>
 <hr>
 </section>
-<section class="report-section reveal" id="section-10" data-chapter="10">
-<header class="chapter-header"><span class="chapter-no">10</span><h1>十、公司與供應鏈整理</h1></header>
-
-<h2>1. 台股公司定位</h2>
-
-<div class="table-shell" tabindex="0" role="region" aria-label="台股公司定位資料表">
-<div class="table-hint" aria-hidden="true"><span>橫向捲動查看完整表格</span><b>→</b></div>
-<table><thead><tr>
-<th scope="col">公司</th>
-<th scope="col">股票代號</th>
-<th scope="col">類型</th>
-<th scope="col">AI server 受惠程度</th>
-<th scope="col">產業純度</th>
-<th scope="col">主要受惠點</th>
-</tr></thead><tbody>
-<tr>
-<th scope="row">台積電</th>
-<td>2330</td>
-<td>晶圓代工</td>
-<td>5</td>
-<td>5</td>
-<td>GPU／ASIC、先進製程、CoWoS</td>
-</tr>
-<tr>
-<th scope="row">國巨</th>
-<td>2327</td>
-<td>被動元件</td>
-<td>4</td>
-<td>5</td>
-<td>MLCC、電阻、鉭電容、薄膜電容</td>
-</tr>
-<tr>
-<th scope="row">華新科</th>
-<td>2492</td>
-<td>被動元件</td>
-<td>4</td>
-<td>5</td>
-<td>MLCC、電阻、RF 元件</td>
-</tr>
-<tr>
-<th scope="row">鈺邦</th>
-<td>6449</td>
-<td>固態電容</td>
-<td>4</td>
-<td>5</td>
-<td>Server、GPU board、PSU</td>
-</tr>
-<tr>
-<th scope="row">晶技</th>
-<td>3042</td>
-<td>Timing</td>
-<td>4</td>
-<td>5</td>
-<td>XTAL、XO、TCXO、VCXO</td>
-</tr>
-<tr>
-<th scope="row">泰藝</th>
-<td>8289</td>
-<td>高階 Timing</td>
-<td>4</td>
-<td>5</td>
-<td>XO、VCXO、TCXO、OCXO</td>
-</tr>
-<tr>
-<th scope="row">瑞昱</th>
-<td>2379</td>
-<td>網通 IC</td>
-<td>4</td>
-<td>4</td>
-<td>Ethernet、Wi-Fi、switch IC</td>
-</tr>
-<tr>
-<th scope="row">強茂</th>
-<td>2481</td>
-<td>功率半導體</td>
-<td>4</td>
-<td>5</td>
-<td>二極體、整流器、MOSFET</td>
-</tr>
-<tr>
-<th scope="row">漢磊</th>
-<td>3707</td>
-<td>SiC／GaN</td>
-<td>4</td>
-<td>5</td>
-<td>化合物半導體代工</td>
-</tr>
-<tr>
-<th scope="row">嘉晶</th>
-<td>3016</td>
-<td>磊晶</td>
-<td>4</td>
-<td>5</td>
-<td>Si／SiC epitaxy</td>
-</tr>
-<tr>
-<th scope="row">環球晶</th>
-<td>6488</td>
-<td>矽晶圓</td>
-<td>3</td>
-<td>5</td>
-<td>半導體上游材料</td>
-</tr>
-<tr>
-<th scope="row">聯發科</th>
-<td>2454</td>
-<td>IC 設計</td>
-<td>3</td>
-<td>4</td>
-<td>AI edge、手機、通訊</td>
-</tr>
-<tr>
-<th scope="row">聯電</th>
-<td>2303</td>
-<td>晶圓代工</td>
-<td>3</td>
-<td>4</td>
-<td>PMIC、MCU、成熟製程</td>
-</tr>
-<tr>
-<th scope="row">世界</th>
-<td>5347</td>
-<td>晶圓代工</td>
-<td>3</td>
-<td>4</td>
-<td>BCD、PMIC、Display driver</td>
-</tr>
-<tr>
-<th scope="row">聯詠</th>
-<td>3034</td>
-<td>Driver IC</td>
-<td>2</td>
-<td>3</td>
-<td>顯示驅動、車載顯示</td>
-</tr>
-<tr>
-<th scope="row">義隆</th>
-<td>2458</td>
-<td>MCU／Touch IC</td>
-<td>2</td>
-<td>3</td>
-<td>AI PC、NB、消費電子</td>
-</tr>
-<tr>
-<th scope="row">矽創</th>
-<td>8016</td>
-<td>Driver／Sensor IC</td>
-<td>2</td>
-<td>3</td>
-<td>車載顯示、sensor</td>
-</tr>
-<tr>
-<th scope="row">台半</th>
-<td>5425</td>
-<td>功率半導體</td>
-<td>3</td>
-<td>5</td>
-<td>二極體、整流器、MOSFET</td>
-</tr>
-<tr>
-<th scope="row">德微</th>
-<td>3675</td>
-<td>二極體／整流器</td>
-<td>3</td>
-<td>5</td>
-<td>工業電源、車用、PSU</td>
-</tr>
-<tr>
-<th scope="row">尼克森</th>
-<td>3317</td>
-<td>MOSFET／PMIC</td>
-<td>4</td>
-<td>5</td>
-<td>48V、DC-DC、server power</td>
-</tr>
-<tr>
-<th scope="row">杰力</th>
-<td>5299</td>
-<td>功率 IC</td>
-<td>4</td>
-<td>5</td>
-<td>MOSFET、Power IC</td>
-</tr>
-<tr>
-<th scope="row">大中</th>
-<td>6435</td>
-<td>MOSFET</td>
-<td>4</td>
-<td>5</td>
-<td>電源、車用、工業</td>
-</tr>
-<tr>
-<th scope="row">富鼎</th>
-<td>8261</td>
-<td>MOSFET／Power IC</td>
-<td>4</td>
-<td>5</td>
-<td>電源管理、工業、消費</td>
-</tr>
-<tr>
-<th scope="row">中美晶</th>
-<td>5483</td>
-<td>材料控股</td>
-<td>3</td>
-<td>4</td>
-<td>矽晶圓、能源材料</td>
-</tr>
-</tbody></table></div>
-<hr>
-<h2>2. 台股與全球公司供應鏈整理</h2>
-
-<div class="table-shell" tabindex="0" role="region" aria-label="台股與全球公司供應鏈整理資料表">
-<div class="table-hint" aria-hidden="true"><span>橫向捲動查看完整表格</span><b>→</b></div>
-<table><thead><tr>
-<th scope="col">類型</th>
-<th scope="col">台股代表公司</th>
-<th scope="col">國際代表公司</th>
-<th scope="col">主要受惠方向</th>
-</tr></thead><tbody>
-<tr>
-<th scope="row">被動元件</th>
-<td>國巨、華新科、禾伸堂、鈺邦、凱美、信昌電、金山電</td>
-<td>Murata、TDK、Taiyo Yuden、Samsung EM、Vishay、Panasonic</td>
-<td>AI server、EV、工業</td>
-</tr>
-<tr>
-<th scope="row">鋁電容材料</th>
-<td>立敦</td>
-<td>Nippon Chemi-Con、Nichicon、Panasonic</td>
-<td>PSU、UPS、工業電源</td>
-</tr>
-<tr>
-<th scope="row">Timing 元件</th>
-<td>晶技、希華、泰藝、台嘉碩、加高、安碁</td>
-<td>Seiko Epson、NDK、Kyocera、Daishinku、SiTime、Microchip、Abracon</td>
-<td>AI 光模組、車用、通訊</td>
-</tr>
-<tr>
-<th scope="row">晶圓代工</th>
-<td>台積電、聯電、世界、茂矽</td>
-<td>Samsung Foundry、GlobalFoundries</td>
-<td>GPU、ASIC、PMIC、功率元件</td>
-</tr>
-<tr>
-<th scope="row">IC 設計</th>
-<td>聯發科、瑞昱、聯詠、義隆、矽創</td>
-<td>NVIDIA、AMD、Broadcom、Marvell、Qualcomm</td>
-<td>AI、通訊、消費電子</td>
-</tr>
-<tr>
-<th scope="row">功率半導體</th>
-<td>強茂、台半、德微、尼克森、杰力、大中、富鼎</td>
-<td>Infineon、ST、onsemi、Rohm、Mitsubishi、Fuji</td>
-<td>PSU、EV、工業</td>
-</tr>
-<tr>
-<th scope="row">SiC／GaN</th>
-<td>漢磊、嘉晶、環球晶、中美晶</td>
-<td>Wolfspeed、Navitas、Power Integrations、Coherent</td>
-<td>EV、快充、資料中心</td>
-</tr>
-</tbody></table></div>
-<hr>
-<h2>3. 被動元件台股整理</h2>
-
-<div class="table-shell" tabindex="0" role="region" aria-label="被動元件台股整理資料表">
-<div class="table-hint" aria-hidden="true"><span>橫向捲動查看完整表格</span><b>→</b></div>
-<table><thead><tr>
-<th scope="col">公司</th>
-<th scope="col">股票代號</th>
-<th scope="col">供應鏈位置</th>
-<th scope="col">主要產品</th>
-<th scope="col">受惠邏輯</th>
-<th scope="col">產業純度</th>
-</tr></thead><tbody>
-<tr>
-<th scope="row">國巨</th>
-<td>2327</td>
-<td>被動元件整合大廠</td>
-<td>MLCC、電阻、鉭電容、薄膜電容、電感</td>
-<td>AI、車用、工業高階被動元件</td>
-<td>高</td>
-</tr>
-<tr>
-<th scope="row">華新科</th>
-<td>2492</td>
-<td>被動元件</td>
-<td>MLCC、電阻、RF 元件</td>
-<td>AI、車用、通訊</td>
-<td>高</td>
-</tr>
-<tr>
-<th scope="row">禾伸堂</th>
-<td>3026</td>
-<td>MLCC／被動元件通路與製造</td>
-<td>MLCC、被動元件模組</td>
-<td>AI server 與高階被動元件需求</td>
-<td>中高</td>
-</tr>
-<tr>
-<th scope="row">凱美</th>
-<td>2375</td>
-<td>鋁電容／電阻</td>
-<td>鋁質電解電容、電阻</td>
-<td>PSU、UPS、工業電源</td>
-<td>中高</td>
-</tr>
-<tr>
-<th scope="row">鈺邦</th>
-<td>6449</td>
-<td>固態電容</td>
-<td>導電高分子電容</td>
-<td>Server、GPU board、PSU</td>
-<td>高</td>
-</tr>
-<tr>
-<th scope="row">立敦</th>
-<td>6175</td>
-<td>鋁箔材料</td>
-<td>鋁箔、化成箔</td>
-<td>鋁電容上游材料</td>
-<td>中高</td>
-</tr>
-<tr>
-<th scope="row">金山電</th>
-<td>8042</td>
-<td>鋁電容</td>
-<td>鋁質電解電容</td>
-<td>電源、工業、消費電子</td>
-<td>中</td>
-</tr>
-<tr>
-<th scope="row">信昌電</th>
-<td>6173</td>
-<td>MLCC／晶片電阻</td>
-<td>MLCC、晶片電阻</td>
-<td>通訊、工業、消費電子</td>
-<td>中</td>
-</tr>
-</tbody></table></div>
-<hr>
-<h2>4. 石英晶體與 Timing 台股整理</h2>
-
-<div class="table-shell" tabindex="0" role="region" aria-label="石英晶體與 Timing 台股整理資料表">
-<div class="table-hint" aria-hidden="true"><span>橫向捲動查看完整表格</span><b>→</b></div>
-<table><thead><tr>
-<th scope="col">公司</th>
-<th scope="col">股票代號</th>
-<th scope="col">供應鏈位置</th>
-<th scope="col">主要產品</th>
-<th scope="col">受惠邏輯</th>
-<th scope="col">產業純度</th>
-</tr></thead><tbody>
-<tr>
-<th scope="row">晶技</th>
-<td>3042</td>
-<td>石英晶體與振盪器龍頭</td>
-<td>XTAL、XO、TCXO、VCXO</td>
-<td>AI 光模組、車用、通訊、server timing</td>
-<td>高</td>
-</tr>
-<tr>
-<th scope="row">希華</th>
-<td>2484</td>
-<td>石英晶體與振盪器</td>
-<td>XTAL、OSC</td>
-<td>車用、消費電子、通訊、工業</td>
-<td>高</td>
-</tr>
-<tr>
-<th scope="row">泰藝</th>
-<td>8289</td>
-<td>高階振盪器</td>
-<td>XO、VCXO、TCXO、OCXO、Timing module</td>
-<td>低軌衛星、5G、AI data center、航太</td>
-<td>高</td>
-</tr>
-<tr>
-<th scope="row">台嘉碩</th>
-<td>3221</td>
-<td>RF 濾波與頻率元件</td>
-<td>SAW、BAW、Crystal、Oscillator、VCO、TCVCXO</td>
-<td>5G、Wi-Fi、AI 光通訊、車用</td>
-<td>高</td>
-</tr>
-<tr>
-<th scope="row">加高</th>
-<td>8182</td>
-<td>石英晶體與振盪器</td>
-<td>石英晶體、石英振盪器、音叉式晶體</td>
-<td>消費、通訊、工業、車用</td>
-<td>中高</td>
-</tr>
-<tr>
-<th scope="row">安碁</th>
-<td>6174</td>
-<td>石英元件</td>
-<td>石英晶體、石英振盪器、VCXO</td>
-<td>工業、車用、通訊、醫療、消費</td>
-<td>中高</td>
-</tr>
-</tbody></table></div>
-<hr>
-<h2>5. 主動元件與 IC 設計台股整理</h2>
-
-<div class="table-shell" tabindex="0" role="region" aria-label="主動元件與 IC 設計台股整理資料表">
-<div class="table-hint" aria-hidden="true"><span>橫向捲動查看完整表格</span><b>→</b></div>
-<table><thead><tr>
-<th scope="col">公司</th>
-<th scope="col">股票代號</th>
-<th scope="col">供應鏈位置</th>
-<th scope="col">主要產品</th>
-<th scope="col">受惠邏輯</th>
-<th scope="col">產業純度</th>
-</tr></thead><tbody>
-<tr>
-<th scope="row">台積電</th>
-<td>2330</td>
-<td>晶圓代工</td>
-<td>先進製程、CoWoS、先進封裝</td>
-<td>GPU／ASIC／AI chip</td>
-<td>高</td>
-</tr>
-<tr>
-<th scope="row">聯電</th>
-<td>2303</td>
-<td>晶圓代工</td>
-<td>成熟製程、BCD、eNVM</td>
-<td>PMIC、MCU、車用、工業 IC</td>
-<td>中</td>
-</tr>
-<tr>
-<th scope="row">世界</th>
-<td>5347</td>
-<td>晶圓代工</td>
-<td>Display driver、PMIC、BCD、GaN 合作</td>
-<td>類比、功率、成熟製程</td>
-<td>中高</td>
-</tr>
-<tr>
-<th scope="row">聯發科</th>
-<td>2454</td>
-<td>IC 設計</td>
-<td>SoC、通訊 IC、AI edge</td>
-<td>手機、AI edge、車用、通訊</td>
-<td>中高</td>
-</tr>
-<tr>
-<th scope="row">瑞昱</th>
-<td>2379</td>
-<td>IC 設計</td>
-<td>Ethernet、Wi-Fi、Audio、Switch IC</td>
-<td>AI server networking、PC、通訊</td>
-<td>中高</td>
-</tr>
-<tr>
-<th scope="row">聯詠</th>
-<td>3034</td>
-<td>IC 設計</td>
-<td>Driver IC、TDDI、SoC</td>
-<td>車載顯示、AI PC、消費電子</td>
-<td>中</td>
-</tr>
-<tr>
-<th scope="row">義隆</th>
-<td>2458</td>
-<td>IC 設計</td>
-<td>Touch IC、MCU</td>
-<td>NB、AI PC、消費電子</td>
-<td>中</td>
-</tr>
-<tr>
-<th scope="row">矽創</th>
-<td>8016</td>
-<td>IC 設計</td>
-<td>Driver IC、Sensor IC</td>
-<td>車載顯示、消費電子</td>
-<td>中</td>
-</tr>
-<tr>
-<th scope="row">茂矽</th>
-<td>2342</td>
-<td>晶圓代工／功率元件</td>
-<td>MOSFET、功率元件代工</td>
-<td>工業、車用、電源</td>
-<td>中</td>
-</tr>
-</tbody></table></div>
-<hr>
-<h2>6. 功率半導體台股整理</h2>
-
-<div class="table-shell" tabindex="0" role="region" aria-label="功率半導體台股整理資料表">
-<div class="table-hint" aria-hidden="true"><span>橫向捲動查看完整表格</span><b>→</b></div>
-<table><thead><tr>
-<th scope="col">公司</th>
-<th scope="col">股票代號</th>
-<th scope="col">供應鏈位置</th>
-<th scope="col">主要產品</th>
-<th scope="col">受惠邏輯</th>
-<th scope="col">產業純度</th>
-</tr></thead><tbody>
-<tr>
-<th scope="row">強茂</th>
-<td>2481</td>
-<td>功率半導體</td>
-<td>二極體、整流器、MOSFET</td>
-<td>PSU、工業、車用、AI 電源</td>
-<td>高</td>
-</tr>
-<tr>
-<th scope="row">台半</th>
-<td>5425</td>
-<td>功率半導體</td>
-<td>二極體、整流器、MOSFET</td>
-<td>電源與工業需求</td>
-<td>高</td>
-</tr>
-<tr>
-<th scope="row">德微</th>
-<td>3675</td>
-<td>二極體／整流器</td>
-<td>Diode、Rectifier</td>
-<td>工業電源、車用、PSU</td>
-<td>高</td>
-</tr>
-<tr>
-<th scope="row">尼克森</th>
-<td>3317</td>
-<td>MOSFET／PMIC</td>
-<td>MOSFET、Regulator、Control IC</td>
-<td>48V、DC-DC、AI server 電源</td>
-<td>高</td>
-</tr>
-<tr>
-<th scope="row">杰力</th>
-<td>5299</td>
-<td>功率 IC</td>
-<td>MOSFET、Power IC</td>
-<td>Server、NB、工業電源</td>
-<td>高</td>
-</tr>
-<tr>
-<th scope="row">大中</th>
-<td>6435</td>
-<td>MOSFET</td>
-<td>Power MOSFET</td>
-<td>電源、車用、工業</td>
-<td>高</td>
-</tr>
-<tr>
-<th scope="row">富鼎</th>
-<td>8261</td>
-<td>MOSFET／電源 IC</td>
-<td>MOSFET、Power IC</td>
-<td>電源管理、工業、消費</td>
-<td>高</td>
-</tr>
-<tr>
-<th scope="row">漢磊</th>
-<td>3707</td>
-<td>化合物半導體</td>
-<td>SiC、GaN、磊晶、代工</td>
-<td>EV、快充、資料中心</td>
-<td>高</td>
-</tr>
-<tr>
-<th scope="row">嘉晶</th>
-<td>3016</td>
-<td>磊晶</td>
-<td>Si、SiC 磊晶</td>
-<td>功率半導體上游</td>
-<td>高</td>
-</tr>
-<tr>
-<th scope="row">環球晶</th>
-<td>6488</td>
-<td>矽晶圓</td>
-<td>6–12 吋矽晶圓</td>
-<td>半導體上游材料</td>
-<td>高</td>
-</tr>
-<tr>
-<th scope="row">中美晶</th>
-<td>5483</td>
-<td>材料控股</td>
-<td>矽晶圓、太陽能</td>
-<td>上游材料</td>
-<td>中高</td>
-</tr>
-</tbody></table></div>
-<hr>
-<h2>7. 國際被動元件與 Timing 公司整理</h2>
-
-<div class="table-shell" tabindex="0" role="region" aria-label="國際被動元件與 Timing 公司整理資料表">
-<div class="table-hint" aria-hidden="true"><span>橫向捲動查看完整表格</span><b>→</b></div>
-<table><thead><tr>
-<th scope="col">類型</th>
-<th scope="col">公司</th>
-<th scope="col">主要產品</th>
-<th scope="col">受惠邏輯</th>
-</tr></thead><tbody>
-<tr>
-<th scope="row">MLCC／被動元件</th>
-<td>Murata</td>
-<td>MLCC、電感、RF 元件</td>
-<td>AI server、車用、通訊</td>
-</tr>
-<tr>
-<th scope="row">MLCC／磁性元件</th>
-<td>TDK</td>
-<td>電感、MLCC、磁性材料</td>
-<td>AI 電源、車用、資料中心</td>
-</tr>
-<tr>
-<th scope="row">MLCC</th>
-<td>Taiyo Yuden</td>
-<td>MLCC、電感</td>
-<td>AI、車用、通訊</td>
-</tr>
-<tr>
-<th scope="row">MLCC</th>
-<td>Samsung Electro-Mechanics</td>
-<td>MLCC、基板、camera module</td>
-<td>AI server、車用 MLCC</td>
-</tr>
-<tr>
-<th scope="row">被動元件</th>
-<td>Vishay</td>
-<td>電阻、電容、二極體、MOSFET</td>
-<td>工業、車用、電源</td>
-</tr>
-<tr>
-<th scope="row">被動元件</th>
-<td>Panasonic</td>
-<td>電容、薄膜電容、電池材料</td>
-<td>EV、工業、電源</td>
-</tr>
-<tr>
-<th scope="row">石英／Timing</th>
-<td>Seiko Epson</td>
-<td>Quartz、Oscillator、Timing devices</td>
-<td>車用、通訊、資料中心</td>
-</tr>
-<tr>
-<th scope="row">石英／Timing</th>
-<td>NDK</td>
-<td>Crystal、XO、TCXO、OCXO</td>
-<td>5G、車用、光通訊</td>
-</tr>
-<tr>
-<th scope="row">石英／Timing</th>
-<td>Kyocera</td>
-<td>Crystal、Oscillator</td>
-<td>IoT、車用、通訊</td>
-</tr>
-<tr>
-<th scope="row">石英／Timing</th>
-<td>Daishinku／KDS</td>
-<td>Crystal、Oscillator</td>
-<td>消費、車用、工業</td>
-</tr>
-<tr>
-<th scope="row">MEMS Timing</th>
-<td>SiTime</td>
-<td>MEMS oscillator、Clock、Timing IC</td>
-<td>AI data center、通訊、工業</td>
-</tr>
-<tr>
-<th scope="row">Timing／Clock IC</th>
-<td>Microchip</td>
-<td>Clock、Timing、Oscillator</td>
-<td>通訊、server、工業</td>
-</tr>
-<tr>
-<th scope="row">Timing</th>
-<td>Abracon</td>
-<td>Oscillator、Crystal、RF 元件</td>
-<td>800G／1.6T、工業、通訊</td>
-</tr>
-</tbody></table></div>
-<hr>
-<h2>8. 國際主動元件與功率半導體公司整理</h2>
-
-<div class="table-shell" tabindex="0" role="region" aria-label="國際主動元件與功率半導體公司整理資料表">
-<div class="table-hint" aria-hidden="true"><span>橫向捲動查看完整表格</span><b>→</b></div>
-<table><thead><tr>
-<th scope="col">類型</th>
-<th scope="col">公司</th>
-<th scope="col">主要產品</th>
-<th scope="col">受惠邏輯</th>
-</tr></thead><tbody>
-<tr>
-<th scope="row">AI 晶片</th>
-<td>NVIDIA</td>
-<td>GPU、networking、AI platform</td>
-<td>AI server 核心</td>
-</tr>
-<tr>
-<th scope="row">AI 晶片</th>
-<td>AMD</td>
-<td>CPU、GPU、AI accelerator</td>
-<td>AI server、HPC</td>
-</tr>
-<tr>
-<th scope="row">ASIC／Networking</th>
-<td>Broadcom</td>
-<td>Custom ASIC、switch、RF</td>
-<td>AI ASIC、資料中心網路</td>
-</tr>
-<tr>
-<th scope="row">ASIC／光通訊</th>
-<td>Marvell</td>
-<td>Custom ASIC、DSP、optical、networking</td>
-<td>AI optical networking、custom chip</td>
-</tr>
-<tr>
-<th scope="row">通訊 IC</th>
-<td>Qualcomm</td>
-<td>SoC、RF、modem</td>
-<td>手機、車用、edge AI</td>
-</tr>
-<tr>
-<th scope="row">類比／PMIC</th>
-<td>Texas Instruments</td>
-<td>Analog、PMIC、power</td>
-<td>工業、車用、AI power</td>
-</tr>
-<tr>
-<th scope="row">類比／電源</th>
-<td>Analog Devices</td>
-<td>Signal chain、power IC</td>
-<td>AI data center、工業、車用</td>
-</tr>
-<tr>
-<th scope="row">功率半導體</th>
-<td>Infineon</td>
-<td>MOSFET、IGBT、SiC、MCU</td>
-<td>EV、AI data center power</td>
-</tr>
-<tr>
-<th scope="row">MCU／SiC</th>
-<td>STMicroelectronics</td>
-<td>MCU、SiC、sensor、analog</td>
-<td>EV、資料中心、工業</td>
-</tr>
-<tr>
-<th scope="row">功率／感測</th>
-<td>onsemi</td>
-<td>SiC、MOSFET、sensor</td>
-<td>EV、工業、資料中心</td>
-</tr>
-<tr>
-<th scope="row">SiC</th>
-<td>Wolfspeed</td>
-<td>SiC substrate、SiC device</td>
-<td>EV、工業、AI power</td>
-</tr>
-<tr>
-<th scope="row">SiC／MOSFET</th>
-<td>Rohm</td>
-<td>SiC、MOSFET、PMIC</td>
-<td>EV、AI server 48V power</td>
-</tr>
-<tr>
-<th scope="row">功率模組</th>
-<td>Mitsubishi Electric</td>
-<td>IGBT、SiC module</td>
-<td>工業、車用、能源</td>
-</tr>
-<tr>
-<th scope="row">功率模組</th>
-<td>Fuji Electric</td>
-<td>IGBT、SiC、工業電源</td>
-<td>EV、工業、能源</td>
-</tr>
-<tr>
-<th scope="row">MCU／類比</th>
-<td>Renesas</td>
-<td>MCU、PMIC、Analog</td>
-<td>車用、工業</td>
-</tr>
-<tr>
-<th scope="row">GaN／SiC</th>
-<td>Navitas</td>
-<td>GaNFast、GeneSiC</td>
-<td>快充、AI data center PSU</td>
-</tr>
-<tr>
-<th scope="row">GaN 電源 IC</th>
-<td>Power Integrations</td>
-<td>PowiGaN、AC-DC IC</td>
-<td>快充、工業、資料中心</td>
-</tr>
-</tbody></table></div>
-<hr>
+<section class="report-section" id="section-10" data-chapter="10">
+  <header class="chapter-header"><span class="chapter-no">10</span><h1>十、公司與供應鏈整理</h1></header>
+  
+    <nav class="company-jump" aria-label="公司分類快速導覽">
+      <span>依元件類型瀏覽</span>
+      <a href="#company-passive"><b>01</b> 被動元件</a>
+      <a href="#company-timing"><b>02</b> Timing</a>
+      <a href="#company-active"><b>03</b> 主動元件</a>
+    </nav>
+    <div class="company-overview reveal">
+      <header class="company-overview-head"><span class="eyebrow">COMPANY LANDSCAPE</span><h2>公司與供應鏈總覽</h2><p>先從跨產業定位建立全貌，再依被動、Timing、主動三條產業鏈分開閱讀。</p></header>
+      
+    <div class="company-table-block">
+      <h3>1. 台股公司定位</h3>
+      <div class="table-shell" tabindex="0" role="region" aria-label="1. 台股公司定位資料表">
+        <div class="table-hint" aria-hidden="true"><span>橫向捲動查看完整表格</span><b>→</b></div>
+        <table><thead><tr><th scope="col">公司</th><th scope="col">股票代號</th><th scope="col">類型</th><th scope="col">AI server 受惠程度</th><th scope="col">產業純度</th><th scope="col">主要受惠點</th></tr></thead>
+        <tbody><tr><th scope="row">台積電</th><td>2330</td><td>晶圓代工</td><td>5</td><td>5</td><td>GPU／ASIC、先進製程、CoWoS</td></tr><tr><th scope="row">國巨</th><td>2327</td><td>被動元件</td><td>4</td><td>5</td><td>MLCC、電阻、鉭電容、薄膜電容</td></tr><tr><th scope="row">華新科</th><td>2492</td><td>被動元件</td><td>4</td><td>5</td><td>MLCC、電阻、RF 元件</td></tr><tr><th scope="row">鈺邦</th><td>6449</td><td>固態電容</td><td>4</td><td>5</td><td>Server、GPU board、PSU</td></tr><tr><th scope="row">晶技</th><td>3042</td><td>Timing</td><td>4</td><td>5</td><td>XTAL、XO、TCXO、VCXO</td></tr><tr><th scope="row">泰藝</th><td>8289</td><td>高階 Timing</td><td>4</td><td>5</td><td>XO、VCXO、TCXO、OCXO</td></tr><tr><th scope="row">瑞昱</th><td>2379</td><td>網通 IC</td><td>4</td><td>4</td><td>Ethernet、Wi-Fi、switch IC</td></tr><tr><th scope="row">強茂</th><td>2481</td><td>功率半導體</td><td>4</td><td>5</td><td>二極體、整流器、MOSFET</td></tr><tr><th scope="row">漢磊</th><td>3707</td><td>SiC／GaN</td><td>4</td><td>5</td><td>化合物半導體代工</td></tr><tr><th scope="row">嘉晶</th><td>3016</td><td>磊晶</td><td>4</td><td>5</td><td>Si／SiC epitaxy</td></tr><tr><th scope="row">環球晶</th><td>6488</td><td>矽晶圓</td><td>3</td><td>5</td><td>半導體上游材料</td></tr><tr><th scope="row">聯發科</th><td>2454</td><td>IC 設計</td><td>3</td><td>4</td><td>AI edge、手機、通訊</td></tr><tr><th scope="row">聯電</th><td>2303</td><td>晶圓代工</td><td>3</td><td>4</td><td>PMIC、MCU、成熟製程</td></tr><tr><th scope="row">世界</th><td>5347</td><td>晶圓代工</td><td>3</td><td>4</td><td>BCD、PMIC、Display driver</td></tr><tr><th scope="row">聯詠</th><td>3034</td><td>Driver IC</td><td>2</td><td>3</td><td>顯示驅動、車載顯示</td></tr><tr><th scope="row">義隆</th><td>2458</td><td>MCU／Touch IC</td><td>2</td><td>3</td><td>AI PC、NB、消費電子</td></tr><tr><th scope="row">矽創</th><td>8016</td><td>Driver／Sensor IC</td><td>2</td><td>3</td><td>車載顯示、sensor</td></tr><tr><th scope="row">台半</th><td>5425</td><td>功率半導體</td><td>3</td><td>5</td><td>二極體、整流器、MOSFET</td></tr><tr><th scope="row">德微</th><td>3675</td><td>二極體／整流器</td><td>3</td><td>5</td><td>工業電源、車用、PSU</td></tr><tr><th scope="row">尼克森</th><td>3317</td><td>MOSFET／PMIC</td><td>4</td><td>5</td><td>48V、DC-DC、server power</td></tr><tr><th scope="row">杰力</th><td>5299</td><td>功率 IC</td><td>4</td><td>5</td><td>MOSFET、Power IC</td></tr><tr><th scope="row">大中</th><td>6435</td><td>MOSFET</td><td>4</td><td>5</td><td>電源、車用、工業</td></tr><tr><th scope="row">富鼎</th><td>8261</td><td>MOSFET／Power IC</td><td>4</td><td>5</td><td>電源管理、工業、消費</td></tr><tr><th scope="row">中美晶</th><td>5483</td><td>材料控股</td><td>3</td><td>4</td><td>矽晶圓、能源材料</td></tr></tbody></table>
+      </div>
+    </div>
+      
+    <div class="company-table-block">
+      <h3>2. 台股與全球公司供應鏈整理</h3>
+      <div class="table-shell" tabindex="0" role="region" aria-label="2. 台股與全球公司供應鏈整理資料表">
+        <div class="table-hint" aria-hidden="true"><span>橫向捲動查看完整表格</span><b>→</b></div>
+        <table><thead><tr><th scope="col">類型</th><th scope="col">台股代表公司</th><th scope="col">國際代表公司</th><th scope="col">主要受惠方向</th></tr></thead>
+        <tbody><tr><th scope="row">被動元件</th><td>國巨、華新科、禾伸堂、鈺邦、凱美、信昌電、金山電</td><td>Murata、TDK、Taiyo Yuden、Samsung EM、Vishay、Panasonic</td><td>AI server、EV、工業</td></tr><tr><th scope="row">鋁電容材料</th><td>立敦</td><td>Nippon Chemi-Con、Nichicon、Panasonic</td><td>PSU、UPS、工業電源</td></tr><tr><th scope="row">Timing 元件</th><td>晶技、希華、泰藝、台嘉碩、加高、安碁</td><td>Seiko Epson、NDK、Kyocera、Daishinku、SiTime、Microchip、Abracon</td><td>AI 光模組、車用、通訊</td></tr><tr><th scope="row">晶圓代工</th><td>台積電、聯電、世界、茂矽</td><td>Samsung Foundry、GlobalFoundries</td><td>GPU、ASIC、PMIC、功率元件</td></tr><tr><th scope="row">IC 設計</th><td>聯發科、瑞昱、聯詠、義隆、矽創</td><td>NVIDIA、AMD、Broadcom、Marvell、Qualcomm</td><td>AI、通訊、消費電子</td></tr><tr><th scope="row">功率半導體</th><td>強茂、台半、德微、尼克森、杰力、大中、富鼎</td><td>Infineon、ST、onsemi、Rohm、Mitsubishi、Fuji</td><td>PSU、EV、工業</td></tr><tr><th scope="row">SiC／GaN</th><td>漢磊、嘉晶、環球晶、中美晶</td><td>Wolfspeed、Navitas、Power Integrations、Coherent</td><td>EV、快充、資料中心</td></tr></tbody></table>
+      </div>
+    </div>
+      <p class="company-source-note"><span>原稿表格拆分</span>7. 國際被動元件與 Timing 公司整理</p>
+    </div>
+    <section class="company-group reveal" id="company-passive">
+      <header class="company-group-head"><span class="company-group-no">01</span><div><span class="eyebrow">PASSIVE COMPONENTS</span><h2>被動元件公司</h2><p>聚焦 MLCC、電容、電阻、磁性元件與上游材料公司。</p></div></header>
+      
+    <div class="company-table-block">
+      <h3>3. 被動元件台股整理</h3>
+      <div class="table-shell" tabindex="0" role="region" aria-label="3. 被動元件台股整理資料表">
+        <div class="table-hint" aria-hidden="true"><span>橫向捲動查看完整表格</span><b>→</b></div>
+        <table><thead><tr><th scope="col">公司</th><th scope="col">股票代號</th><th scope="col">供應鏈位置</th><th scope="col">主要產品</th><th scope="col">受惠邏輯</th><th scope="col">產業純度</th></tr></thead>
+        <tbody><tr><th scope="row">國巨</th><td>2327</td><td>被動元件整合大廠</td><td>MLCC、電阻、鉭電容、薄膜電容、電感</td><td>AI、車用、工業高階被動元件</td><td>高</td></tr><tr><th scope="row">華新科</th><td>2492</td><td>被動元件</td><td>MLCC、電阻、RF 元件</td><td>AI、車用、通訊</td><td>高</td></tr><tr><th scope="row">禾伸堂</th><td>3026</td><td>MLCC／被動元件通路與製造</td><td>MLCC、被動元件模組</td><td>AI server 與高階被動元件需求</td><td>中高</td></tr><tr><th scope="row">凱美</th><td>2375</td><td>鋁電容／電阻</td><td>鋁質電解電容、電阻</td><td>PSU、UPS、工業電源</td><td>中高</td></tr><tr><th scope="row">鈺邦</th><td>6449</td><td>固態電容</td><td>導電高分子電容</td><td>Server、GPU board、PSU</td><td>高</td></tr><tr><th scope="row">立敦</th><td>6175</td><td>鋁箔材料</td><td>鋁箔、化成箔</td><td>鋁電容上游材料</td><td>中高</td></tr><tr><th scope="row">金山電</th><td>8042</td><td>鋁電容</td><td>鋁質電解電容</td><td>電源、工業、消費電子</td><td>中</td></tr><tr><th scope="row">信昌電</th><td>6173</td><td>MLCC／晶片電阻</td><td>MLCC、晶片電阻</td><td>通訊、工業、消費電子</td><td>中</td></tr></tbody></table>
+      </div>
+    </div>
+      
+    <div class="company-table-block">
+      <h3>國際被動元件公司整理</h3>
+      <div class="table-shell" tabindex="0" role="region" aria-label="國際被動元件公司整理資料表">
+        <div class="table-hint" aria-hidden="true"><span>橫向捲動查看完整表格</span><b>→</b></div>
+        <table><thead><tr><th scope="col">類型</th><th scope="col">公司</th><th scope="col">主要產品</th><th scope="col">受惠邏輯</th></tr></thead>
+        <tbody><tr><th scope="row">MLCC／被動元件</th><td>Murata</td><td>MLCC、電感、RF 元件</td><td>AI server、車用、通訊</td></tr><tr><th scope="row">MLCC／磁性元件</th><td>TDK</td><td>電感、MLCC、磁性材料</td><td>AI 電源、車用、資料中心</td></tr><tr><th scope="row">MLCC</th><td>Taiyo Yuden</td><td>MLCC、電感</td><td>AI、車用、通訊</td></tr><tr><th scope="row">MLCC</th><td>Samsung Electro-Mechanics</td><td>MLCC、基板、camera module</td><td>AI server、車用 MLCC</td></tr><tr><th scope="row">被動元件</th><td>Vishay</td><td>電阻、電容、二極體、MOSFET</td><td>工業、車用、電源</td></tr><tr><th scope="row">被動元件</th><td>Panasonic</td><td>電容、薄膜電容、電池材料</td><td>EV、工業、電源</td></tr></tbody></table>
+      </div>
+    </div>
+    </section>
+    <section class="company-group reveal" id="company-timing">
+      <header class="company-group-head"><span class="company-group-no">02</span><div><span class="eyebrow">FREQUENCY & TIMING</span><h2>Timing 公司</h2><p>聚焦石英晶體、振盪器、MEMS oscillator 與 Clock IC 公司。</p></div></header>
+      
+    <div class="company-table-block">
+      <h3>4. 石英晶體與 Timing 台股整理</h3>
+      <div class="table-shell" tabindex="0" role="region" aria-label="4. 石英晶體與 Timing 台股整理資料表">
+        <div class="table-hint" aria-hidden="true"><span>橫向捲動查看完整表格</span><b>→</b></div>
+        <table><thead><tr><th scope="col">公司</th><th scope="col">股票代號</th><th scope="col">供應鏈位置</th><th scope="col">主要產品</th><th scope="col">受惠邏輯</th><th scope="col">產業純度</th></tr></thead>
+        <tbody><tr><th scope="row">晶技</th><td>3042</td><td>石英晶體與振盪器龍頭</td><td>XTAL、XO、TCXO、VCXO</td><td>AI 光模組、車用、通訊、server timing</td><td>高</td></tr><tr><th scope="row">希華</th><td>2484</td><td>石英晶體與振盪器</td><td>XTAL、OSC</td><td>車用、消費電子、通訊、工業</td><td>高</td></tr><tr><th scope="row">泰藝</th><td>8289</td><td>高階振盪器</td><td>XO、VCXO、TCXO、OCXO、Timing module</td><td>低軌衛星、5G、AI data center、航太</td><td>高</td></tr><tr><th scope="row">台嘉碩</th><td>3221</td><td>RF 濾波與頻率元件</td><td>SAW、BAW、Crystal、Oscillator、VCO、TCVCXO</td><td>5G、Wi-Fi、AI 光通訊、車用</td><td>高</td></tr><tr><th scope="row">加高</th><td>8182</td><td>石英晶體與振盪器</td><td>石英晶體、石英振盪器、音叉式晶體</td><td>消費、通訊、工業、車用</td><td>中高</td></tr><tr><th scope="row">安碁</th><td>6174</td><td>石英元件</td><td>石英晶體、石英振盪器、VCXO</td><td>工業、車用、通訊、醫療、消費</td><td>中高</td></tr></tbody></table>
+      </div>
+    </div>
+      
+    <div class="company-table-block">
+      <h3>國際 Timing 公司整理</h3>
+      <div class="table-shell" tabindex="0" role="region" aria-label="國際 Timing 公司整理資料表">
+        <div class="table-hint" aria-hidden="true"><span>橫向捲動查看完整表格</span><b>→</b></div>
+        <table><thead><tr><th scope="col">類型</th><th scope="col">公司</th><th scope="col">主要產品</th><th scope="col">受惠邏輯</th></tr></thead>
+        <tbody><tr><th scope="row">石英／Timing</th><td>Seiko Epson</td><td>Quartz、Oscillator、Timing devices</td><td>車用、通訊、資料中心</td></tr><tr><th scope="row">石英／Timing</th><td>NDK</td><td>Crystal、XO、TCXO、OCXO</td><td>5G、車用、光通訊</td></tr><tr><th scope="row">石英／Timing</th><td>Kyocera</td><td>Crystal、Oscillator</td><td>IoT、車用、通訊</td></tr><tr><th scope="row">石英／Timing</th><td>Daishinku／KDS</td><td>Crystal、Oscillator</td><td>消費、車用、工業</td></tr><tr><th scope="row">MEMS Timing</th><td>SiTime</td><td>MEMS oscillator、Clock、Timing IC</td><td>AI data center、通訊、工業</td></tr><tr><th scope="row">Timing／Clock IC</th><td>Microchip</td><td>Clock、Timing、Oscillator</td><td>通訊、server、工業</td></tr><tr><th scope="row">Timing</th><td>Abracon</td><td>Oscillator、Crystal、RF 元件</td><td>800G／1.6T、工業、通訊</td></tr></tbody></table>
+      </div>
+    </div>
+    </section>
+    <section class="company-group reveal" id="company-active">
+      <header class="company-group-head"><span class="company-group-no">03</span><div><span class="eyebrow">ACTIVE COMPONENTS</span><h2>主動元件公司</h2><p>聚焦晶圓代工、IC 設計、功率半導體與 SiC／GaN 公司。</p></div></header>
+      
+    <div class="company-table-block">
+      <h3>5. 主動元件與 IC 設計台股整理</h3>
+      <div class="table-shell" tabindex="0" role="region" aria-label="5. 主動元件與 IC 設計台股整理資料表">
+        <div class="table-hint" aria-hidden="true"><span>橫向捲動查看完整表格</span><b>→</b></div>
+        <table><thead><tr><th scope="col">公司</th><th scope="col">股票代號</th><th scope="col">供應鏈位置</th><th scope="col">主要產品</th><th scope="col">受惠邏輯</th><th scope="col">產業純度</th></tr></thead>
+        <tbody><tr><th scope="row">台積電</th><td>2330</td><td>晶圓代工</td><td>先進製程、CoWoS、先進封裝</td><td>GPU／ASIC／AI chip</td><td>高</td></tr><tr><th scope="row">聯電</th><td>2303</td><td>晶圓代工</td><td>成熟製程、BCD、eNVM</td><td>PMIC、MCU、車用、工業 IC</td><td>中</td></tr><tr><th scope="row">世界</th><td>5347</td><td>晶圓代工</td><td>Display driver、PMIC、BCD、GaN 合作</td><td>類比、功率、成熟製程</td><td>中高</td></tr><tr><th scope="row">聯發科</th><td>2454</td><td>IC 設計</td><td>SoC、通訊 IC、AI edge</td><td>手機、AI edge、車用、通訊</td><td>中高</td></tr><tr><th scope="row">瑞昱</th><td>2379</td><td>IC 設計</td><td>Ethernet、Wi-Fi、Audio、Switch IC</td><td>AI server networking、PC、通訊</td><td>中高</td></tr><tr><th scope="row">聯詠</th><td>3034</td><td>IC 設計</td><td>Driver IC、TDDI、SoC</td><td>車載顯示、AI PC、消費電子</td><td>中</td></tr><tr><th scope="row">義隆</th><td>2458</td><td>IC 設計</td><td>Touch IC、MCU</td><td>NB、AI PC、消費電子</td><td>中</td></tr><tr><th scope="row">矽創</th><td>8016</td><td>IC 設計</td><td>Driver IC、Sensor IC</td><td>車載顯示、消費電子</td><td>中</td></tr><tr><th scope="row">茂矽</th><td>2342</td><td>晶圓代工／功率元件</td><td>MOSFET、功率元件代工</td><td>工業、車用、電源</td><td>中</td></tr></tbody></table>
+      </div>
+    </div>
+      
+    <div class="company-table-block">
+      <h3>6. 功率半導體台股整理</h3>
+      <div class="table-shell" tabindex="0" role="region" aria-label="6. 功率半導體台股整理資料表">
+        <div class="table-hint" aria-hidden="true"><span>橫向捲動查看完整表格</span><b>→</b></div>
+        <table><thead><tr><th scope="col">公司</th><th scope="col">股票代號</th><th scope="col">供應鏈位置</th><th scope="col">主要產品</th><th scope="col">受惠邏輯</th><th scope="col">產業純度</th></tr></thead>
+        <tbody><tr><th scope="row">強茂</th><td>2481</td><td>功率半導體</td><td>二極體、整流器、MOSFET</td><td>PSU、工業、車用、AI 電源</td><td>高</td></tr><tr><th scope="row">台半</th><td>5425</td><td>功率半導體</td><td>二極體、整流器、MOSFET</td><td>電源與工業需求</td><td>高</td></tr><tr><th scope="row">德微</th><td>3675</td><td>二極體／整流器</td><td>Diode、Rectifier</td><td>工業電源、車用、PSU</td><td>高</td></tr><tr><th scope="row">尼克森</th><td>3317</td><td>MOSFET／PMIC</td><td>MOSFET、Regulator、Control IC</td><td>48V、DC-DC、AI server 電源</td><td>高</td></tr><tr><th scope="row">杰力</th><td>5299</td><td>功率 IC</td><td>MOSFET、Power IC</td><td>Server、NB、工業電源</td><td>高</td></tr><tr><th scope="row">大中</th><td>6435</td><td>MOSFET</td><td>Power MOSFET</td><td>電源、車用、工業</td><td>高</td></tr><tr><th scope="row">富鼎</th><td>8261</td><td>MOSFET／電源 IC</td><td>MOSFET、Power IC</td><td>電源管理、工業、消費</td><td>高</td></tr><tr><th scope="row">漢磊</th><td>3707</td><td>化合物半導體</td><td>SiC、GaN、磊晶、代工</td><td>EV、快充、資料中心</td><td>高</td></tr><tr><th scope="row">嘉晶</th><td>3016</td><td>磊晶</td><td>Si、SiC 磊晶</td><td>功率半導體上游</td><td>高</td></tr><tr><th scope="row">環球晶</th><td>6488</td><td>矽晶圓</td><td>6–12 吋矽晶圓</td><td>半導體上游材料</td><td>高</td></tr><tr><th scope="row">中美晶</th><td>5483</td><td>材料控股</td><td>矽晶圓、太陽能</td><td>上游材料</td><td>中高</td></tr></tbody></table>
+      </div>
+    </div>
+      
+    <div class="company-table-block">
+      <h3>8. 國際主動元件與功率半導體公司整理</h3>
+      <div class="table-shell" tabindex="0" role="region" aria-label="8. 國際主動元件與功率半導體公司整理資料表">
+        <div class="table-hint" aria-hidden="true"><span>橫向捲動查看完整表格</span><b>→</b></div>
+        <table><thead><tr><th scope="col">類型</th><th scope="col">公司</th><th scope="col">主要產品</th><th scope="col">受惠邏輯</th></tr></thead>
+        <tbody><tr><th scope="row">AI 晶片</th><td>NVIDIA</td><td>GPU、networking、AI platform</td><td>AI server 核心</td></tr><tr><th scope="row">AI 晶片</th><td>AMD</td><td>CPU、GPU、AI accelerator</td><td>AI server、HPC</td></tr><tr><th scope="row">ASIC／Networking</th><td>Broadcom</td><td>Custom ASIC、switch、RF</td><td>AI ASIC、資料中心網路</td></tr><tr><th scope="row">ASIC／光通訊</th><td>Marvell</td><td>Custom ASIC、DSP、optical、networking</td><td>AI optical networking、custom chip</td></tr><tr><th scope="row">通訊 IC</th><td>Qualcomm</td><td>SoC、RF、modem</td><td>手機、車用、edge AI</td></tr><tr><th scope="row">類比／PMIC</th><td>Texas Instruments</td><td>Analog、PMIC、power</td><td>工業、車用、AI power</td></tr><tr><th scope="row">類比／電源</th><td>Analog Devices</td><td>Signal chain、power IC</td><td>AI data center、工業、車用</td></tr><tr><th scope="row">功率半導體</th><td>Infineon</td><td>MOSFET、IGBT、SiC、MCU</td><td>EV、AI data center power</td></tr><tr><th scope="row">MCU／SiC</th><td>STMicroelectronics</td><td>MCU、SiC、sensor、analog</td><td>EV、資料中心、工業</td></tr><tr><th scope="row">功率／感測</th><td>onsemi</td><td>SiC、MOSFET、sensor</td><td>EV、工業、資料中心</td></tr><tr><th scope="row">SiC</th><td>Wolfspeed</td><td>SiC substrate、SiC device</td><td>EV、工業、AI power</td></tr><tr><th scope="row">SiC／MOSFET</th><td>Rohm</td><td>SiC、MOSFET、PMIC</td><td>EV、AI server 48V power</td></tr><tr><th scope="row">功率模組</th><td>Mitsubishi Electric</td><td>IGBT、SiC module</td><td>工業、車用、能源</td></tr><tr><th scope="row">功率模組</th><td>Fuji Electric</td><td>IGBT、SiC、工業電源</td><td>EV、工業、能源</td></tr><tr><th scope="row">MCU／類比</th><td>Renesas</td><td>MCU、PMIC、Analog</td><td>車用、工業</td></tr><tr><th scope="row">GaN／SiC</th><td>Navitas</td><td>GaNFast、GeneSiC</td><td>快充、AI data center PSU</td></tr><tr><th scope="row">GaN 電源 IC</th><td>Power Integrations</td><td>PowiGaN、AC-DC IC</td><td>快充、工業、資料中心</td></tr></tbody></table>
+      </div>
+    </div>
+    </section>
 </section>
 <section class="report-section reveal" id="section-11" data-chapter="11">
 <header class="chapter-header"><span class="chapter-no">11</span><h1>十一、產業純度排序</h1></header>
